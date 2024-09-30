@@ -10,18 +10,18 @@ import random
 
 
 def max_product(arr):
-    maxNum1 = 0
-    maxNum2 = 0
+    max_num1 = 0
+    max_num2 = 0
     for num in arr:
-        if num > maxNum1:
-            maxNum2 = maxNum1
-            maxNum1 = num
-        if num < maxNum1 and num > maxNum2:
-            maxNum2 = num
+        if num > max_num1:
+            max_num2 = max_num1
+            max_num1 = num
+        if num < max_num1 and num > max_num2:
+            max_num2 = num
+    return max_num1 * max_num2
 
 
-
-array = list(range(40))
+array = [1, 7, 3, 4, 9, 5]
 random.shuffle(array)
 
-max_product(array)
+print(max_product(array))

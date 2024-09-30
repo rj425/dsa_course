@@ -4,7 +4,7 @@
 import random
 
 
-def findPairs(numbers, target):
+def find_pairs(numbers, target):
     # Possible Solution : O(n^2)
     length = len(numbers)
     pairs = []
@@ -15,7 +15,7 @@ def findPairs(numbers, target):
     return pairs
 
 
-def findPairsLeetCode(numbers, target):
+def find_pairs_leet_code(numbers, target):
     # LeetCode Solution : O(n)
     pairs = []
     seen = {}
@@ -36,5 +36,5 @@ print(f"ARRAY  : {array}")
 print(f"TARGET : {target}")
 
 print("\nPAIRS : ")
-print(findPairs(array, target))
-print(findPairsLeetCode(array, target))
+print(find_pairs(array, target))
+print(find_pairs_leet_code(array, target))
